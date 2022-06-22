@@ -12,10 +12,11 @@ Sync
 ```bash
 
 # Initialize local repository
-repo init -u https://github.com/ResurrectionRemix/platform_manifest.git -b Q
+repo init -u https://github.com/LeCmnGend/manifest_RR.git -b rr-Q --depth=1
 
 # Sync
-repo sync --force-sync --no-clone-bundle
+repo sync -j1 --force-sync --no-clone-bundle --no-tags --fail-fast
+
 ```
 
 Build
