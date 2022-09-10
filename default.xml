@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
+  <remote  name="lecmngend"
+           fetch="https://github.com/LeCmnGend"
+		   revision="refs/heads/rr-Q" />
+
+  <remote  name="lecmngend-gitlab"
+           fetch="https://gitlab.com/LeCmnGend" />
+
   <remote  name="github"
            fetch=".."
            review="review.lineageos.org" />
@@ -14,7 +21,8 @@
   <remote  name="aosp"
            fetch="https://android.googlesource.com"
            review="android-review.googlesource.com"
-           revision="refs/tags/android-10.0.0_r41"/>
+           revision="refs/tags/android-10.0.0_r41"
+           sync-c="true"/>
 
   <remote  name="rr"
            fetch="https://github.com/ResurrectionRemix"
@@ -692,6 +700,9 @@
   <project path="tools/tradefederation/contrib" name="platform/tools/tradefederation/contrib" groups="pdk,tradefed" remote="aosp" />
   <project path="tools/tradefederation/core" name="platform/tools/tradefederation" groups="pdk,tradefed" remote="aosp" />
   <project path="tools/trebuchet" name="platform/tools/trebuchet" groups="tools,cts,pdk,pdk-cw-fs,pdk-fs" remote="aosp" />
+
+    <!-- Remove unused AOSP repos -->
+    <include name="snippets/remove.xml" />
 
   <include name="snippets/lineage.xml" />
   <include name="snippets/rr.xml" />
