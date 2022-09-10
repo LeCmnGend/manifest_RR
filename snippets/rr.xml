@@ -82,4 +82,7 @@
   <project path="packages/overlays/Resurrection" name="vendor_overlays_resurrection" remote="rr" />
   <project path="packages/apps/BlurView" name="BlurView" remote="rr" />
 
+  <!--Hardware-->
+  <project path="hardware/xiaomi" name="vendor_overlays_resurrection" remote="lecmngend" clone-depth="1" />
+
 </manifest>
