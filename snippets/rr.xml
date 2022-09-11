@@ -24,7 +24,7 @@
   <project path="lineage-sdk" name="lineage-sdk" remote="rr"/>
 
   <!--Apps-->
-  <project path="packages/apps/Settings" name="Resurrection_packages_apps_Settings" remote="rr" />
+  <project path="packages/apps/Settings" name="packages_apps_Settings" remote="lecmngend" />
   <project path="packages/apps/LineageParts" name="packages_apps_LineageParts"  remote="rr"/>
   <project path="packages/apps/OmniStyle" name="packages_apps_OmniStyle" remote="rr" /> 
   <project path="packages/apps/Updater" name="packages_apps_updater" remote="bb"/>
