@@ -15,7 +15,7 @@ Sync
 repo init -u https://github.com/LeCmnGend/manifest_RR.git -b rr-Q --depth=1
 
 # Sync
-repo sync -j1 --force-sync --no-clone-bundle --no-tags --fail-fast
+repo sync -j$(nproc --all) --force-sync --no-clone-bundle --no-tags --fail-fast
 
 ```
 
@@ -31,7 +31,7 @@ $ . build/envsetup.sh
 $ lunch rr_$device-userdebug
 
 # Build the code
-$ mka bacon
+$ make bacon -j$(nproc --all)
 ```
 
 
